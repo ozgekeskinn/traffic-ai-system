@@ -9,9 +9,9 @@ def trafficModel(df):
     model.add(Dense(1))
 
     model.compile(
-        optimizer = "adam",  # default en iyi seçim
-        loss = "mse",  # tahmin edilen trafik ile gerçek trafik arasındaki fark
-        metrics = ["mae"]  # ortalama hata → daha anlaşılır çıktı verir
+        optimizer = "adam",
+        loss = "mse",
+        metrics = ["mae"] 
     )
     X_train,X_test,y_train,y_test = preprocessing(df)
     history = model.fit(
