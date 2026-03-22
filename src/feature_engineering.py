@@ -4,12 +4,6 @@ def featureEngineering(df):
     df["Time"] = pd.to_datetime(df["Time"], format = "%I:%M:%S %p")
     df["hour"] = df["Time"].dt.hour
 
-    # | Parça | Anlam           |
-    # | ----- | --------------- |
-    # | `%I`  | 12 saatlik saat |
-    # | `%M`  | dakika          |
-    # | `%S`  | saniye          |
-    # | `%p`  | AM / PM         |
     day_map = {
         "Monday" : 0,
         "Tuesday" : 1,
@@ -29,5 +23,5 @@ def featureEngineering(df):
     }
 
     df["traffic_situation"] = df["Traffic Situation"].map(trafficSituation_map)
-    df["is_weekend"] = (df["day_of_week"] >= 5).astype(int)  # haftasonu ise 1, haftaiçi ise 0 olur
+    df["is_weekend"] = (df["day_of_week"] >= 5).astype(int) 
     return df
