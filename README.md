@@ -65,7 +65,7 @@ traffic-ai-system/
 ## 📊 Veri Analizi
 
 ### 🔹 Saat Bazlı Trafik
-![Traffic vs. Hour](asset/TrafficVsHour.png)
+![Traffic vs. Hour](assets/TrafficVsHour.png)
 
 - Sabah ve akşam saatlerinde yoğunluk artar  
 - Gece saatlerinde trafik minimum seviyededir  
@@ -75,7 +75,7 @@ traffic-ai-system/
 ---
 
 ### 🔹 Gün Bazlı Trafik
-![Traffic for Days](asset/TrafficForDays.png)
+![Traffic for Days](assets/TrafficForDays.png)
 
 - Hafta içi trafik daha yoğundur  
 - Hafta sonu nispeten düşüş görülür  
@@ -85,7 +85,7 @@ traffic-ai-system/
 ---
 
 ### 🔹 Trafik Dağılımı
-![Traffic Distribution](asset/TrafficDistribution.png)
+![Traffic Distribution](assets/TrafficDistribution.png)
 
 - Veri setinde `normal` sınıf baskındır  
 - `high` ve `low` daha azdır  
